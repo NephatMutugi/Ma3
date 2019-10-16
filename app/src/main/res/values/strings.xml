@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ma3</string>
+    <string name="welcome_to_ma3">Welcome to Ma3</string>
+    <string name="select_fare_text">Select Your Fare Below</string>
+    <string name="origin">Origin:</string>
+    <string name="destination">Destination:</string>
+    <string name="continue_btn_text">Continue</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="select_fare_conditions_below">Select Fare Conditions Below</string>
+    <string name="submit_text">Submit</string>
+    <string name="date_time">30/10/19 17:30</string>
+</resources>

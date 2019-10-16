@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logo"
+            android:src="@drawable/app_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_fare_text"
+            android:textSize="20sp"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+        </TextView>
+
+        <com.crystal.crystalrangeseekbar.widgets.BubbleThumbSeekbar
+            android:id="@+id/range_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="30dp"
+            app:corner_radius="10"
+            app:min_value="0"
+            app:max_value="200"
+            app:steps="10"
+            app:bar_color="#F7BB88"
+            app:bar_highlight_color="#E07416"
+            app:left_thumb_color="#FFC0CB"
+            app:left_thumb_color_pressed="#00FFFF"
+            app:data_type="_integer"
+            >
+
+        </com.crystal.crystalrangeseekbar.widgets.BubbleThumbSeekbar>
+
+
+        <TextView
+            android:id="@+id/origin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/range_seekbar"
+            android:text="@string/origin"
+            android:layout_marginTop="50dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/add_origin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/origin"
+            android:layout_below="@+id/range_seekbar"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_boarder"
+            android:layout_marginEnd="5dp"
+            android:hint="Type your location here">
+
+        </EditText>
+
+
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/origin"
+            android:text="@string/destination"
+            android:layout_marginTop="50dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/add_dest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/destination"
+            android:layout_below="@+id/origin"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_boarder"
+            android:layout_marginEnd="5dp"
+            android:hint="Type your destination here">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/destination"
+            android:layout_marginTop="40dp"
+            android:text="@string/continue_btn_text"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_button">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
